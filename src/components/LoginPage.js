@@ -25,7 +25,7 @@ class LoginPage extends Component {
         left: '0',
         right: '0',
         background: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${this.state.background}) no-repeat`,
-        backgroundSize: '100%'
+        backgroundSize: '100% 100%'
       }}>
         <LoginCard logIn={this.props.logIn} />
       </div>

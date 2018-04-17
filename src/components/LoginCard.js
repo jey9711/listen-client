@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-import Card from 'material-ui/Card';
-import CardText from 'material-ui/Card/CardText';
-import RaisedButton from 'material-ui/RaisedButton';
+import Paper from 'material-ui/Paper';
 import SvgIcon from 'material-ui/SvgIcon';
+import RaisedButton from 'material-ui/RaisedButton';
+
 import { Grid, Row, Col } from 'react-material-responsive-grid';
 
 class LoginCard extends Component {
@@ -33,56 +33,45 @@ class LoginCard extends Component {
     );
 
     return (
-      <Card
+      <Paper
         style={{
           position: 'fixed',
           top: '50%',
           left: '50%',
           width: '300px',
-          height: '250px',
+          height: '260px',
           marginLeft: '-150px',
-          marginTop: '-100px',
-          padding: '5px',
+          marginTop: '-130px',
+          padding: '25px',
           background: 'rgba(0,0,0, 0.6)',
-          borderRadius: '15px'
+          borderRadius: '15px',
+          textAlign: 'center'
         }}
       >
-        <CardText>
-          <Grid style={{ textAlign: 'center' }}>
-            <Row>
-              <Col lg={12}>
-                <SpotifyIcon size={150} />
-              </Col>
-            </Row>
-            <Row>
-              <Col lg={12}>
-                <RaisedButton
-                  label={
-                    <strong 
-                      style={{ 
-                        color: "#ffffff", 
-                        fontSize: "12px" 
-                      }}
-                    >
-                      Log in To Spotify
+        <SpotifyIcon size={150} />
+        <RaisedButton
+          label={
+            <strong
+              style={{
+                color: "#ffffff",
+                fontSize: "12px"
+              }}
+            >
+              Log in To Spotify
                     </strong>
-                  }
-                  backgroundColor="#1db954"
-                  fullWidth={true}
-                  buttonStyle={{ 
-                    borderRadius: '20px' 
-                  }}
-                  style={{
-                    marginTop: '20px',
-                    borderRadius: '20px'
-                  }}
-                  onClick={this._handleLogIn}
-                />
-              </Col>
-            </Row>
-          </Grid>
-        </CardText>
-      </Card>
+          }
+          backgroundColor="#1db954"
+          fullWidth={true}
+          buttonStyle={{
+            borderRadius: '20px'
+          }}
+          style={{
+            marginTop: '20px',
+            borderRadius: '20px'
+          }}
+          onClick={this._handleLogIn}
+        />
+      </Paper>
     )
   }
 }
