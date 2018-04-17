@@ -12,7 +12,7 @@ class TrackDescription extends Component {
     return (
       <Grid style={{ textAlign: 'center', ...this.props.style }}>
         <Row>
-          <Col lg={12}>
+          <Col xs4={4} sm={12} md={12} lg={12}>
             <img
               src={this.props.albumImgSrc}
               width="300px"
