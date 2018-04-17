@@ -8,6 +8,11 @@ import { Grid, Row, Col } from 'react-material-responsive-grid';
 
 class LoginCard extends Component {
 
+  constructor(props){
+    super(props);
+    this._handleLogIn = this._handleLogIn.bind(this);
+  }
+
   _handleLogIn() {
     this.props.logIn();
   }

@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 import LoginCard from './LoginCard';
 
-// import backgroundImg from './../assets/images/toronto.jpg'
+import backgroundImg from './../assets/images/toronto.jpg'
 // import backgroundImg from './../assets/images/toronto_skyscrapers.jpg'
-import backgroundImg from './../assets/images/party_crowd.jpg'
+// import backgroundImg from './../assets/images/party_crowd.jpg'
 // import backgroundImg from './../assets/images/party_hands.jpg'
 
 class LoginPage extends Component {
