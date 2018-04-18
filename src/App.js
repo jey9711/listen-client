@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './styles/App.css';
 import Spotify from 'spotify-web-api-js';
+import QueryString from 'query-string';
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
@@ -17,7 +18,6 @@ class App extends Component {
     this.logIn = this.logIn.bind(this);
   }
 
-<<<<<<< HEAD
   componentDidMount() {
     const parsed = QueryString.parse(window.location.search);
     const accessToken = parsed.access_token;
