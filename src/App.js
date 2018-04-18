@@ -63,7 +63,7 @@ class App extends Component {
       }));
   }
 
-  logIn = () => window.location='http://localhost:8888/login'
+  logIn = () => window.location=`${BACKEND_URI}/login`
 
   render() {
     return (
