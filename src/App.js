@@ -63,7 +63,16 @@ class App extends Component {
       }));
   }
 
-  logIn = () => window.location=`${BACKEND_URI}/login`
+  logIn = () => {
+    if (window.location.href.includes('localhost')) {
+      alert('window.location:'+window.location);
+    } else {
+      alert('window.location:' + window.location);
+    }
+  }
+  // logIn = () => window.location = window.location.href.includes('localhost')
+  //   ? 'http://localhost:8888/login'
+  //   : 'https://listen-server.herokuapp.com/login';
 
   render() {
     return (
