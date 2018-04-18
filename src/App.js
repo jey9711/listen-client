@@ -63,7 +63,7 @@ class App extends Component {
       }));
   }
 
-  logIn = () => window.location=`${BACKEND_URI}/login`
+  logIn = () => alert(`${process.env.BACKEND_URI}/login`);
 
   render() {
     return (
