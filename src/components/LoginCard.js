@@ -4,6 +4,8 @@ import Paper from 'material-ui/Paper';
 import SvgIcon from 'material-ui/SvgIcon';
 import RaisedButton from 'material-ui/RaisedButton';
 
+import { Grid, Row, Col } from 'react-material-responsive-grid';
+
 class LoginCard extends Component {
 
   constructor(props){
