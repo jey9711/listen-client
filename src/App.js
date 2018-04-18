@@ -6,23 +6,18 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import LoginPage from './components/LoginPage';
 import TrackPage from './components/TrackPage';
-import QueryString from 'query-string';
 
 class App extends Component {
 
   constructor() {
     super();
     this.state = { 
-      accessToken: '',
       isLoggedIn: false,
-      userInfo: null,
-      userPlayerInfo: null
     }
     this.logIn = this.logIn.bind(this);
-    this.getSpotifyUserInfo = this.getSpotifyUserInfo.bind(this);
-    this.getSpotifyUserPlayerInfo = this.getSpotifyUserPlayerInfo.bind(this);
   }
 
+<<<<<<< HEAD
   componentDidMount() {
     const parsed = QueryString.parse(window.location.search);
     const accessToken = parsed.access_token;
@@ -64,13 +59,16 @@ class App extends Component {
   }
 
   logIn = () => alert(`${process.env.BACKEND_URI}/login`);
+=======
+  logIn = () => this.setState({ isLoggedIn: true });
+>>>>>>> parent of 7a52672... hooked up spotify API, withcurrent user and player endpoints
 
   render() {
     return (
       <MuiThemeProvider>
         {
-          this.state.isLoggedIn
-            ? <TrackPage userInfo={this.state.userInfo} userPlayerInfo={this.state.userPlayerInfo}/>
+          this.state.isLoggedIn 
+            ? <TrackPage />
             : <LoginPage logIn={this.logIn}/>
         }
       </MuiThemeProvider>

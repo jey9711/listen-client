@@ -13,8 +13,8 @@ class PeopleDrawer extends Component {
 
   render() {
 
-    const peopleItems = this.props.people.map((personUrl, i) =>
-      <ListItem key={i}>
+    const peopleItems = this.props.people.map((personUrl) =>
+      <ListItem>
         <Avatar src={personUrl} size={50} />
       </ListItem>
     );
